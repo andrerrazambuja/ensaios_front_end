@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+	background: #111;
+}
+
+section{ /* Bom exemplo de como centralizar um texto/div dentro de um container. (100vh serve para tela inteira) */
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+}
+section .main{
+	animation: fade 4s;
+}
+
+section .text{
+	position: relative;
+	text-align: center;
+	line-height: 170%;
+	color: #ffffff;
+	cursor: default;
+	text-align: center;
+	transition: 2s;
+}
+
+section .img {
+	height: 200px;
+	width: 200px;
+	display: block;
+	margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px white;
+}
+
+section a{
+	font-size: 200%;
+	color: none;
+}
+
+section .linkedin{
+	color: #2f86f7;
+}
+
+section .github{
+	color: #bb8ebf;
+}
+
+section .arrow{
+	position: absolute;
+	margin-top: auto;
+	margin-bottom: auto;
+	right: 20%;
+	font-size: 500%;
+	text-shadow: 0 0 10px white;
+	animation: fade2 3s;
+}
+
+section .arrow:hover{
+	text-shadow: 0 0 20px white;
+}
+
+section .arrow a {
+	color: #ffffff;
+}
+
+.transition-slide {
+  transition: 4s;
+  opacity: 1;
+}
+
+html.is-leaving .transition-slide {
+  opacity: 0;
+}
+
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;		
+	}
+}
+
+@keyframes fade2{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;		
+	}
+}

@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'JetBrains Mono', monospace;
+}
+
+section{ /* Bom exemplo de como centralizar um texto/div dentro de um container. (100vh serve para tela inteira) */
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+}
+
+body { /* Feito com a ferramenta --> https://cssgradient.io/*/
+	background: rgb(17,17,17);
+	background: linear-gradient(55deg, rgba(17,17,17,1) 42%, rgba(75,0,136,1) 86%, rgba(120,6,186,1) 100%);
+	animation: slide 1s;
+}
+
+section .container{
+	line-height: 200%;
+	text-align: left;
+	background-color: #4e405c;
+	padding: 3% 3% 2% 3%;
+	box-shadow: 0 0 15px #4e405c;
+	justify-content: center;
+}
+
+section .container:hover{
+	box-shadow: 0 0 20px #4e405c;	
+}
+
+section .login{
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 10%;
+}
+
+section form .textinput{
+	background: none;
+	outline: 0;
+	border: 0;
+	color: #ffffff;
+	font-size: 105%;
+	border-bottom: 1px solid #ffffff;
+	margin-bottom: 2%;
+}
+
+section form .label{
+	color: #ffffff;
+	font-size: 120%;
+}
+
+section form .btn{
+	background: none;
+	outline: 0;
+	border: 0;
+	padding: 2% 4%;
+	background-color: #9480a8;
+	color: #ffffff;
+	font-size: 90%;
+	font-weight: bold;
+	width: 100%;
+}
+
+section form .btn:hover{
+	background-color: #706180;
+	box-shadow: 0 0 5px #706180;
+}
+
+section form #remember{
+	font-size: 80%;
+	position: relative;
+	margin-bottom: 2%;
+}
+
+section form .checker{
+	align-self: center;
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	cursor: pointer;
+}
+
+section hr{
+	margin:auto;
+	width: 65%;
+	color: #9480a8;
+}
+
+section .or{
+	position: relative;
+	font-size: 85%;
+	color: #9480a8;
+	text-align: center;
+	font-weight: bold;
+}
+
+section .altlogin{
+	margin-top: 10%;
+	font-size: 105%;
+	color: #9480a8;
+	text-align: center;
+}
+
+section .altlogin i{
+	padding: 3%;
+	width:15%;
+	box-shadow: 0 0 4px #9480a8;
+	border-radius: 30%;
+}
+
+section .altlogin i:hover{
+	background-color: #9480a8;
+	color: #4e405c; 
+}
+
+@keyframes slide{
+	0%{
+		background-color: black;
+		transform: translateX(-100%);
+	}
+	100%{
+		opacity: 1;
+	}
+}
