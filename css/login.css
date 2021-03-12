@@ -17,7 +17,7 @@ section{ /* Bom exemplo de como centralizar um texto/div dentro de um container.
 body { /* Feito com a ferramenta --> https://cssgradient.io/*/
 	background: rgb(17,17,17);
 	background: linear-gradient(55deg, rgba(17,17,17,1) 42%, rgba(75,0,136,1) 86%, rgba(120,6,186,1) 100%);
-	animation: slide 1s;
+	animation: slide 1.5s;
 }
 
 section .container{
@@ -118,12 +118,45 @@ section .altlogin i:hover{
 	color: #4e405c; 
 }
 
+section .arrow{
+	position: absolute;
+	margin-top: auto;
+	margin-bottom: auto;
+	right: 20%;
+	font-size: 500%;
+	text-shadow: 0 0 10px white;
+	animation: fade 3s;
+}
+
+section .arrow:hover{
+	text-shadow: 0 0 20px white;
+}
+
+section .arrow a {
+	color: #ffffff;
+}
+
 @keyframes slide{
 	0%{
-		background-color: black;
+		opacity: 0;
 		transform: translateX(-100%);
+	}
+	20%{
+		opacity: 0;
 	}
 	100%{
 		opacity: 1;
+	}
+}
+
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;		
 	}
 }
