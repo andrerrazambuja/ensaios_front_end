@@ -95,6 +95,16 @@ body::-webkit-scrollbar {
 	box-shadow: 0 0 10px rgba(250,250,250,0.2);
 }
 
+.linkedin{
+	font-size: 150%;
+	color: #2f86f7;
+}
+
+.github{
+	font-size: 150%;
+	color: #bb8ebf;
+}
+
 #section3 .container{
 	position: relative;
 	height: 100%;
@@ -126,4 +136,15 @@ body::-webkit-scrollbar {
 	100%{
 		opacity: 1;		
 	}
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background: none;
+   color: #c9c9c9;
+   text-align: center;
+   font-size: 70%;
 }
